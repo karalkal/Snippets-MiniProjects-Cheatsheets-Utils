@@ -1,6 +1,27 @@
-img {
+.card {
     width: 20%;
     margin: 40px;
     height: auto;
     display: inline-block;
 }
+
+img {
+    width: 100%;
+}
+
+header {
+    border: 2px solid #4169e1;
+    font-size: 1.7em;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+main {
+    border: 2px solid indianred;
+    text-align: center;
+    background-color: lightgoldenrodyellow;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+    }
