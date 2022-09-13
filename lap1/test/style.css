@@ -1,3 +1,54 @@
+* {
+    margin: 0;
+}
+
+header {
+    padding: 0 0 17px 0;
+    border: 2px solid #4169e1;
+    text-align: center;
+    background-color: rgb(180, 224, 251);
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+nav {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 234, 226);
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    font-size: 1.7em;
+    margin: 0 17px;
+}
+
+nav a {
+    display: inline-block;
+    width: 150px;
+    background-color: rgb(255, 176, 145);
+    font-family: 'Permanent Marker', cursive;
+    text-decoration: none;
+    padding: 5px 11px;
+    color: darkslategray;
+    border: 1px solid darkslategray;
+    border-radius: 13px;
+}
+
+main {
+    border: 2px solid indianred;
+    text-align: center;
+    background-color: rgb(255, 255, 229);
+}
+
 .card {
     width: 20%;
     margin: 40px;
@@ -8,20 +59,3 @@
 img {
     width: 100%;
 }
-
-header {
-    border: 2px solid #4169e1;
-    font-size: 1.7em;
-    text-align: center;
-    background-color: lightskyblue;
-}
-
-main {
-    border: 2px solid indianred;
-    text-align: center;
-    background-color: lightgoldenrodyellow;
-}
-
-header h1 {
-    font-family: 'Permanent Marker', cursive;
-    }
