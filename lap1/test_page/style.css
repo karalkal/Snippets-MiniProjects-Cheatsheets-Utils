@@ -32,6 +32,7 @@ nav li {
 }
 
 nav a {
+    /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. */
     display: inline-block;
     width: 150px;
     background-color: rgb(255, 176, 145);
@@ -50,10 +51,10 @@ main {
 }
 
 .card {
+    display: inline-block;
     width: 20%;
     margin: 40px;
     height: auto;
-    display: inline-block;
 }
 
 img {
