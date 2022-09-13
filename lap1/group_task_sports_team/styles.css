@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+}
+
+header {
+    padding: 0 0 17px 0;
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+header h1 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+section {
+    margin: 35px 0;
+}
+
+table {
+    width: 100%;
+}
+
+thead {
+    background-color: darkblue;
+    color: white;
+    font-size: 1.7em;
+}
+
+tbody tr:nth-child(odd) {
+    background: lightblue;
+}
+
+tbody tr:nth-child(even) {
+    background: lightgoldenrodyellow;
+}
+
+td {
+    font-size: 1.3em;
+    border: 1px solid darkblue;
+}
+
+section h2 {
+    text-align: center;
+    color: darkblue;
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 22px;
+}
+
+div#second_sec {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+a {
+    padding: 17px;
+    border: 4px solid darkblue;
+    border-radius: 22px;
+}
+
+a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+img {
+    object-fit: cover;
+    border: 8px double darkblue;
+}
+
+
+.second-section-element {
+    font-size: 25px;
+    font-family: 'GillSans', 'GillSansMT', Calibri, 'TrebuchetMS', sans-serif;
+    text-align: center;
+    flex-basis: 33%;
+}
+
+footer {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
