@@ -1,0 +1,24 @@
+{
+  "name": "logic-in-js",
+  "version": "1.0.0",
+  "description": "Notes and repo for Logic in JavaScript lecture",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/getfutureproof/fp_study_notes_logic_in_JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/getfutureproof/fp_study_notes_logic_in_JavaScript/issues"
+  },
+  "homepage": "https://github.com/getfutureproof/fp_study_notes_logic_in_JavaScript#readme",
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}

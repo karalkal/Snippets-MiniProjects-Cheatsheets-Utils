@@ -1,0 +1,58 @@
+header,
+footer {
+    width: 100%;
+    height: var(--stripsheight);
+}
+
+nav,
+footer {
+    position: absolute;
+}
+
+footer {
+    bottom: 0;
+}
+
+nav,
+aside {
+    height: var(--stripsheight);
+}
+
+nav {
+    right: 0;
+    width: 65vw;
+}
+
+aside {
+    width: 35vw;
+}
+
+article {
+    height: calc(100vh - var(--stripsheight)*3);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article section {
+    height: 50%;
+    width: calc(100vw/3);
+}
+
+
+@media only screen and (max-width: 760px) {
+    nav,
+    aside {
+        position: static;
+        width: 100%;
+    }
+
+    article section {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    article section {
+        width: 100%;
+    }
+}
