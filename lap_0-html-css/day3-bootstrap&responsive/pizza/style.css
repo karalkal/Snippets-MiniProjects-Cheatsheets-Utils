@@ -1,0 +1,64 @@
+#Brandname {
+    font-family: 'Rubik Moonrocks', cursive;
+    font-size: 60px;
+    color: burlywood;
+    text-shadow: red 2px 2px, yellow 4px 4px;
+}
+
+body {
+    background-image: url("./bg.png");
+    background-color: #cccccc;
+}
+
+div.container {
+    margin-top: 44px;
+    ;
+    width: 800px;
+    height: 800px;
+}
+
+div.carousel-item img {
+    border: 22px outset tan;
+    border-radius: 0 11% 0 11%;
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.pizza-label,
+.input-fields {
+    background-color: #fffaf4;
+    color: darkred;
+    font-size: 1.7em;
+    border: 2px solid darkred;
+    border-radius: 8px;
+    margin-left: 17px;
+    padding: 4px 8px;
+}
+
+.larger-btn {
+    width: 40%;
+    height: 2em;
+    padding: 4px 8px;
+    font-size: 2.2em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+}
+
+form>div {
+    margin: 0 22px;
+}
+
+div.checkboxes {
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+
+.checkbox-item {
+    text-align: left;
+    flex-basis: 25%;
+}
