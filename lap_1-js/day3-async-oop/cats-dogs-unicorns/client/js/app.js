@@ -4,9 +4,10 @@ const msgBtn = document.querySelector('#msg-btn');
 const getCatsBtn = document.querySelector('#getCatsBtn');
 const getDogsBtn = document.querySelector('#getDogsBtn');
 const getUnicornsBtn = document.querySelector('#getUnicornsBtn');
+const h3Element = document.querySelector('h3')
 
 const form = document.querySelector('#new-cat-form');
-const catsList = document.querySelector('ul');
+const ulElement = document.querySelector('ul');
 const delBtn = document.querySelector('#delete-cats')
 
 // Bind event listeners
@@ -46,10 +47,12 @@ function getAllUnicorns() {
 };
 
 function appendEntries(data) {
-    catsList.innerHTML = "";
+
+    ulElement.innerHTML = "";
     let itemsArray = Object.values(data);
     let itemKey = Object.keys(data)[0]
-    console.log(itemKey)
+    // console.log(itemKey)
+    h3Element.textContent = itemKey[0].toUpperCase() + itemKey.substring(1) + ": "
 
     for (let item of itemsArray[0]) {
         appendSingleLiItem(item)
@@ -60,7 +63,7 @@ function appendSingleLiItem(itemData) {
     // console.log(itemData)
     const newLi = document.createElement('li');
     newLi.textContent = `Name: ${itemData.name} || Age: ${itemData.age}`
-    catsList.append(newLi);
+    ulElement.append(newLi);
 };
 
 function deleteCats() {

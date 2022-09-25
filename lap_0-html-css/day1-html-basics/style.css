@@ -2,21 +2,26 @@
     margin: 0;
 }
 
+html {
+    text-align: center;
+    background-color: #FEFBF6;
+}
+
 header {
     padding: 0 0 17px 0;
-    border: 2px solid #4169e1;
     text-align: center;
-    background-color: rgb(180, 224, 251);
+    background-color: #A6D1E6;
 }
 
 header h1 {
     font-family: 'Permanent Marker', cursive;
+    color: #3D3C42;
 }
 
 nav {
     margin: 0 auto;
     padding: 20px;
-    background-color: rgb(255, 234, 226);
+    background-color: #7F5283;
     width: 100%;
 }
 
@@ -34,20 +39,14 @@ nav li {
 nav a {
     /* Compared to display: inline, the major difference is that display: inline-block allows to set a width and height on the element. */
     display: inline-block;
-    width: 150px;
-    background-color: rgb(255, 176, 145);
+    width: 20%;
     font-family: 'Permanent Marker', cursive;
     text-decoration: none;
     padding: 5px 11px;
-    color: darkslategray;
-    border: 1px solid darkslategray;
+    color: #3D3C42;
+    background-color: #FEFBF6;
+    border: 1px solid #3D3C42;
     border-radius: 13px;
-}
-
-main {
-    border: 2px solid indianred;
-    text-align: center;
-    background-color: rgb(255, 255, 229);
 }
 
 .card {
@@ -59,4 +58,35 @@ main {
 
 img {
     width: 100%;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+th,
+tr {
+    border: 1px solid #3D3C42;
+    color: #3D3C42;
+}
+
+th {
+    border-bottom: 4px solid #3D3C42;    ;
+    height: 2em;
+}
+
+tr {
+    height: 4em;
+    background-color: #A6D1E6;
+
+}
+
+.first,
+.third {
+    width: 10%
+}
+
+.second {
+    width: 80%
 }
