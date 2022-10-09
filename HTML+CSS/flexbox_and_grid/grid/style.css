@@ -1,0 +1,79 @@
+body {
+    background-color: white;
+}
+
+#parent {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 10% 10% 30% 40% 10%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.number {
+    font-size: 25px;
+    font-family: 'GillSans', 'GillSansMT', Calibri, 'TrebuchetMS', sans-serif;
+    text-align: center;
+}
+
+#section1 {
+    background-color: red;
+    border: solid black 2px;
+    grid-column-start: 4;
+    /* grid-column-end: 6; */
+    grid-row-start: 5;
+}
+
+#section2 {
+    background-color: orange;
+    border: solid black 2px;
+}
+
+#section3 {
+    background-color: yellow;
+    border: solid black 2px;
+}
+
+#section4 {
+    background-color: green;
+    border: solid black 2px;
+}
+
+#section5 {
+    background-color: blue;
+    border: solid black 2px;
+}
+
+#section6 {
+    background-color: indigo;
+    border: solid black 2px;
+}
+
+#section7 {
+    background-color: violet;
+    border: solid black 2px;
+}
+
+#section8 {
+    background-color: pink;
+    border: solid black 2px;
+}
+
+#section9 {
+    background-color: rosybrown;
+    border: solid black 2px;
+}
+
+#section10 {
+    background-color: firebrick;
+    border: solid black 2px;
+}
+
+#section11 {
+    background-color: wheat;
+    border: solid black 2px;
+}
+
+#section12 {
+    background-color: aqua;
+    border: solid black 2px;
+}
