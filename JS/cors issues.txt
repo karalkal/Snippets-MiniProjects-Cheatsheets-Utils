@@ -1,0 +1,5 @@
+npm i cors
+# in app.js
+
+let cors = require("cors")
+app.use(cors())
