@@ -1,0 +1,35 @@
+input,
+select,
+textarea {
+    margin-bottom: 44px;
+}
+
+label {
+    display: block;
+    background-color: aquamarine;
+}
+
+div.container {
+    margin-top: 5%;
+}
+
+section {
+    width: 46%;
+    float: left;
+    margin-top: 0%;
+    border: 4px dashed aquamarine;
+    padding: 2%;
+    margin: 2%;
+}
+
+
+div#second_sec {
+    position: relative;
+}
+
+div.centered {
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(127, 255, 212, .4);
+    padding: 11px;
+}
