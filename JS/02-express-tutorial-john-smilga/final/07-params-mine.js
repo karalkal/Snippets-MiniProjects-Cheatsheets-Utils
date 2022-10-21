@@ -1,8 +1,15 @@
+//just an experiment, see the original version for cleaner code
+
 const app = require('express')()    //alternative use
-const { products, people } = require('./data')
+
+// original won't work here
+// const { products, people } = require('../data'), therefore do this:
+const path = require('path')
+const { products, people } = require(path.resolve(__dirname, '../data.js'))
+console.log("Yoppy!!! ", path.resolve(__dirname, '../data.js'))
+
+// concatenate both arrays, ids are now mixed up, some duplicated...
 const combinedJson = products.concat(people)
-//just an experiment, see the original version
-// concatenate both arrays, ids end up mixed up...
 
 
 app.get('/', (req, res) => {
@@ -27,16 +34,14 @@ app.get('/find/:id', (req, res) => {
 app.get('/whatever/:anything', (req, res) => {
     console.log(req.params)
     let seqNo = req.params.anything
-    let toFind = combinedJson[seqNo]
-    console.log(toFind)
+    let found = combinedJson[seqNo]
+    console.log(found)
 
-    if (toFind) {
-        res.status(200).json(toFind)
+    if (found) {
+        res.status(200).json(found)
     }else{
         res.status(404).send('F*** **F')
     }
-
-
 })
 
 app.listen(5000, () => console.log("Yo man!"))
