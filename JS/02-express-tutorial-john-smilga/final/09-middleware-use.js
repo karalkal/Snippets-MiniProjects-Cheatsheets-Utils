@@ -1,10 +1,17 @@
 const express = require('express')
 const app = express()
-const logger = require('./logger')
-const authorize = require('./authorize')
+
+// view previous example, here logger middleware is moved to separate file
+const logger = require('./middleware/loggerMiddleware')
+const authorize = require('./middleware/authMiddleware')
+
 //  req => middleware => res
+
 app.use([logger, authorize])
+// Will invoke the middleware in any of the routes
+// order matters, only routes after will use it
 // api/home/about/products
+
 app.get('/', (req, res) => {
   res.send('Home')
 })
