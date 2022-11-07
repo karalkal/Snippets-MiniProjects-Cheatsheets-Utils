@@ -1,12 +1,11 @@
 const express = require('express')
 const app = express()
+// return a string that will be the log line
+// need to install it with npm i morgan
 const morgan = require('morgan')
-const logger = require('./logger')
-const authorize = require('./authorize')
-//  req => middleware => res
 
-// app.use([logger, authorize])
 // app.use(express.static('./public'))
+
 app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
