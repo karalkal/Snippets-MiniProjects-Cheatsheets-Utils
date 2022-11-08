@@ -54,6 +54,7 @@ app.post('/login', (req, res) => {
 })
 
 app.put('/api/people/:id', (req, res) => {
+    //param contains the id, req body - the update data itself
     const { id } = req.params
     const { name } = req.body
 
@@ -66,10 +67,11 @@ app.put('/api/people/:id', (req, res) => {
     }
     const newPeople = people.map((person) => {
         if (person.id === Number(id)) {
-            person.name = name
+            person.name = name  // in this example name = req.body
         }
         return person
     })
+    // does not change actual data, just updates and returns { people } = require('./data')
     res.status(200).json({ success: true, data: newPeople })
 })
 
@@ -83,6 +85,8 @@ app.delete('/api/people/:id', (req, res) => {
     const newPeople = people.filter(
         (person) => person.id !== Number(req.params.id)
     )
+    console.log(req.params)
+
     return res.status(200).json({ success: true, data: newPeople })
 })
 
