@@ -4,7 +4,7 @@ const app = express()
 const tasks = require('./routes/tasks')
 
 const connectDB = require('./db/connect')
-require('dotenv').config()      //get access to .env variables, i.e. URI
+require('dotenv').config()      //get access to .env variables, i.e. MONGO_URI
 
 // middleware
 app.use(express.json())
