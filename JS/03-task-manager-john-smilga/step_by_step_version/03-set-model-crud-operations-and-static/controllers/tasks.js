@@ -1,16 +1,17 @@
 const Task = require('../models/Task')
 
+
 const getAllTasks = async (req, res) => {
     // find all documents ==> await MyModel.find({})
     try {
-        const tasks = await Task.find()
+        const tasks = await Task.find({})
         res.status(200).json({ tasks })
     } catch (error) {
         res.status(500).json({ msg: error })
     }
 }
 
-const createTask = async (req, res) => {
+const createTask = async (req, res) => {        //Validators are in Model!
     try {
         const task = await Task.create(req.body)
         res.status(201).json({ task })
@@ -63,7 +64,7 @@ const updateTask = async (req, res) => {
         const task = await Task.findOneAndUpdate(
             { _id: taskId },
             req.body,
-            {
+            {                   // 3rd param is options, Validators are in Model!
                 new: true,      // return updated json
                 runValidators: true
             })

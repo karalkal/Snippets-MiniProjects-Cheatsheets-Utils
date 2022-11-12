@@ -7,6 +7,7 @@ const connectDB = require('./db/connect')
 require('dotenv').config()      //get access to .env variables, i.e. URI
 
 // middleware
+app.use(express.static('./public'))
 app.use(express.json())
 
 // routes
