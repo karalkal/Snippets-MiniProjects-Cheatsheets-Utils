@@ -20,17 +20,23 @@ const createTask = async (req, res) => {
 }
 
 const getTask = async (req, res) => {
+    // John is using alias and destucturing, then findOne method
+    // const { id: taskId } = req.params
+    // const task = await Task.findOne({ _id: taskId })
+    // I am using await Adventure.findById(id).exec()
     try {
-        const { id: taskId } = req.params
-        const task = await Task.findOne({ _id: taskId })
+        const taskId = req.params.id
 
-        if (!task) {
-            return res.status(404).json({ msg: `No task with id: ${taskId}` })
+        // John checks for 404 with if statement, refer to his solution for details
+        // This doesn't work like this, hence another try catch block
+        try {
+            const task = await Task.findById(taskId)
+            res.status(200).json({ task })
+        } catch (error) {       // no match
+            res.status(404).json({ msg: `No task with id: ${taskId}` })
         }
 
-        res.status(200).json({ task })
-
-    } catch (error) {
+    } catch (error) {       // cast error etc., not working with my setup
         res.status(500).json({ msg: error })
     }
 }
