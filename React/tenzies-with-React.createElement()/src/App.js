@@ -33,8 +33,12 @@ function App() {
         />
     )
 
+    // USING React.createElement
+    // type: Type of the html element or component (example : h1,h2,p,button, etc).
+    // props: The properties object (example: {style: { color: “red” }} or className or event handlers etc).    
+    // children: anything you need to pass between the dom elements.
 
-    /*
+    if (tenzies) {
         return React.createElement(
             'main',
             {},
@@ -42,14 +46,40 @@ function App() {
             React.createElement('h4', {}, "Roll until all dice are the same."),
             React.createElement('h4', {}, "Click each die to freeze it"),
             React.createElement('h4', {}, "at its current value between rolls."),
+
             React.createElement('div', { className: "boxes--container" }, diceElements),
             React.createElement('div', { id: "counter--and--button" },
-                React.createElement('div')),
-    
-    
-            //   React.createElement(Expenses, { items: expenses })
+                React.createElement('div', { id: "counter" },
+                    React.createElement('p', {}, `Attempt: ${count}`)
+                )),
+            React.createElement('div', {},
+                React.createElement(Confetti, {},),
+                React.createElement('button', { onClick: startNewGame, className: "btn--new" }, "New Game")
+            )
         );
-        */
+    }
+
+    else {
+        return React.createElement(
+            'main',
+            {},
+            React.createElement('h1', {}, "Tenzies"),
+            React.createElement('h4', {}, "Roll until all dice are the same."),
+            React.createElement('h4', {}, "Click each die to freeze it"),
+            React.createElement('h4', {}, "at its current value between rolls."),
+
+            React.createElement('div', { className: "boxes--container" }, diceElements),
+            React.createElement('div', { id: "counter--and--button" },
+                React.createElement('div', { id: "counter" },
+                    React.createElement('p', {}, `Attempt: ${count}`)
+                )),
+
+            React.createElement('div', {},
+                React.createElement('button', { onClick: handleRollClick, className: "btn--roll" }, 'Roll')
+            )
+        );
+    }
+
 
     //        USING JSX
     /*
@@ -85,6 +115,7 @@ function App() {
     */
 
     function handleRollClick() {
+        console.log("here")
         setCount(oldCount => oldCount + 1)
 
         setDices(prevArr => prevArr.map(dice => {
