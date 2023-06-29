@@ -1,0 +1,92 @@
+html,
+body {
+    height: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 0;
+    background-color: aliceblue;
+}
+
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+#app {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 8px;
+}
+
+h1 {
+    margin: 8px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 62%;
+    margin: 0 auto;
+}
+
+input,
+textarea {
+    background-color: papayawhip;
+    height: 3.5em;
+}
+
+form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    width: 62%;
+    margin: 0 auto;
+}
+
+
+li {
+    background-color: papayawhip;
+    border: 1px solid palegreen;
+    border-radius: 5px 2px;
+    margin: 8px 0;
+}
+
+li div {
+    position: relative;
+}
+
+li div button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+li div button:hover,
+li div button:focus {
+    box-shadow: 0 0 1px black;
+}
+
+li h2 {
+    background-color: NavajoWhite;
+    margin: 0;
+    padding: 4px;
+}
+
+li p {
+    margin: 8px;
+}
