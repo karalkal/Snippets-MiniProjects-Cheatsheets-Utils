@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(239, 217, 202);
+}
+
+.container,
+.container-fluid {
+    background-color: rgb(109, 240, 194);
+    border: black solid 15px;
+    color: rgb(0, 0, 0);
+}
+
+.row {
+    background-color: rgb(236, 93, 23);
+    border: rgb(255, 199, 64) solid 10px;
+}
+
+[class*="col"] {
+    border: black solid 5px;
+    background-color: rgb(100, 0, 228);
+    color: rgb(255, 255, 255);
+}
+
+/*
+Category 	    Breakpoint Range 	Device Type
+Extra small 	< 576 px 	        portrait smartphones
+Small 	        ≥ 576 px 	        landscape smartphones
+Medium 	        ≥ 768 px 	        tablets
+Large 	        ≥ 992 px 	        desktops
+Extra Large 	≥ 1200 px 	        large desktop
+*/
