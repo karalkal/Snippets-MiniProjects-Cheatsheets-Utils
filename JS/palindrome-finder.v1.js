@@ -18,7 +18,8 @@ const startTime = performance.now();
 const characters = '0123456789';
 
 // Feel free to change this value
-const originalStringLen = 100000;    // Don't try above 100.000, even this takes 1.5 min
+/* !!!!! Don't try this above 100.000, even this takes 1.5 min !!!!! */
+const originalStringLen = 10000;
 
 // Generate the random string of digits
 let originalString = '';

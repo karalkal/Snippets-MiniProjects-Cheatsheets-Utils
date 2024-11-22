@@ -19,7 +19,7 @@ const characters = '0123456789';
 const originalStringLen = 10000000;
 // Generate the random string of digits
 let originalString = '';
-for (let i = 0; i < originalStringLen; i++) {
+for (let i = 0; i < originalStringLen - 1; i++) {
     originalString += characters[Math.floor(Math.random() * characters.length)];
 }
 
@@ -36,7 +36,7 @@ let palindromeArr = [];
 
 const startTime = performance.now();
 
-for (let i = 0; i < originalStringLen; i++) {       // -1 as we will be comparing with char on the right 
+for (let i = 0; i < originalStringLen - 1; i++) {       // -1 as we will be comparing with char on the right 
     // console.log("index:", i);
     // Just declare, depending on the case we examine different indices
     let startIdx;
