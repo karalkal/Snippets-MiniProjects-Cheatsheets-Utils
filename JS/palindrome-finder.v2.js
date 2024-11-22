@@ -13,8 +13,6 @@
 
 // The characters used in the string - you shouldn't need to change this
 
-const startTime = performance.now();
-
 const characters = '0123456789';
 
 // Feel free to change this value
@@ -35,6 +33,8 @@ let palindromeArr = [];
     If also identical => palindrome. Continue until no longer identical. 
     2. Use similar logic for triplets (outer values are identical)
 */
+
+const startTime = performance.now();
 
 for (let i = 0; i < originalStringLen; i++) {       // -1 as we will be comparing with char on the right 
     // console.log("index:", i);
@@ -83,7 +83,6 @@ for (let i = 0; i < originalStringLen; i++) {       // -1 as we will be comparin
             break
         }
     }
-
 }
 
 let sortedArr = palindromeArr.sort((a, b) => b.length - a.length);
