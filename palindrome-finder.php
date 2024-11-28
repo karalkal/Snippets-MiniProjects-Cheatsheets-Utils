@@ -33,7 +33,8 @@ usort($palindromeArr, function ($a, $b) {
     return strlen($b) - strlen($a);
 });
 
-echo "Found " . sizeof($palindromeArr) . " palindromes:\n" . $palindromeArr;
+echo "Found " . sizeof($palindromeArr) . " palindromes (first 88):\n";
+print_r(array_slice($palindromeArr, 0, 88));
 
 $end_time = microtime(true);
 $execution_time = ($end_time - $start_time) / 1000;
@@ -58,4 +59,3 @@ function checkSubstringIsPalindrome($originalString, &$palindromeArr, $leftIdx, 
     return;
 }
 
-?>
