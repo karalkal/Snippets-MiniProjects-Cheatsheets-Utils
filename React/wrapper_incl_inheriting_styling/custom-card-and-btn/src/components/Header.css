@@ -1,0 +1,11 @@
+.Header {
+    font-size: 1.1em;
+    margin: 11px;
+    padding: 22px;
+    background-color: #032a79;
+    color: rgb(245, 195, 255);
+}
+
+.Header p {
+    margin-bottom: .4em;
+}

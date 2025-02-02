@@ -1,0 +1,22 @@
+.Main {
+    font-size: 1.1em;
+    margin: 11px;
+    padding: 26px;
+    background-color: #013e04;
+    color: rgb(247, 247, 97);
+}
+
+.Main button {
+    padding: 22px;
+    background-color: yellow;
+}
+
+.red-btn {
+    border-color: red;
+    margin-right: 20px;
+}
+
+.blue-btn {
+    border-color: blue;
+    margin-right: 20px;
+}
