@@ -1,0 +1,14 @@
+.notes-container {
+    background-color: #bbb;
+    padding: 1rem;
+    margin: 3rem;
+}
+
+span {
+    font-size: 1.1em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li{
+    margin-bottom: 1em;
+}
